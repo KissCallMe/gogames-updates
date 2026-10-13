@@ -1,5 +1,12 @@
 {
   "schema_version": 1,
   "channel": "stable",
-  "resources": []
+  "resources": [
+    {
+      "path": "Assets/update-test.txt",
+      "url": "https://raw.githubusercontent.com/KissCallMe/gogames-updates/main/assets/update-test.txt",
+      "sha256": "c9e601bd840af050a762be619dd22380460896ec64cfbb52a7283e73c96d61ba",
+      "size": 33
+    }
+  ]
 }
