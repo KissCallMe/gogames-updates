@@ -1,1 +1,1 @@
-GoGames resource updater test v1
+GoGames resource updater test v2
