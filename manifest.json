@@ -1,6 +1,5 @@
 {
   "schema_version": 1,
   "channel": "stable",
-  "resources": [],
-  "notes": "Nenhum pacote publicado. O GoGames deve ignorar entradas desconhecidas e verificar SHA-256 antes de instalar."
+  "resources": []
 }
