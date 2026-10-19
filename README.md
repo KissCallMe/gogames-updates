@@ -62,3 +62,24 @@ Exemplo de entrada (valores fictícios, **não adicionar sem publicar o arquivo 
 **Atualização de emuladores:** ainda não está habilitada. Requer fluxo separado com confirmação, backup e recuperação, sem sobrescrever configurações do usuário.
 
 Não publicar jogos ou arquivos de terceiros sem autorização de redistribuição.
+
+## Pacotes ZIP incrementais (GoGames com suporte a pacotes)
+
+Para atualizações grandes, crie um ZIP com as pastas `Games/<CONSOLE>/...` (FakeROMs `.zip.torrent`, `.utorrent` e metadados em `Games/<CONSOLE>/Torrent/*.torrent`) e `Emulators/<CONSOLE>/...` (novos emuladores). Os caminhos são relativos a `GoGamesData`, sem uma pasta extra na raiz do ZIP.
+
+Publique o ZIP como asset de uma Release deste repositório e adicione **uma entrada por ZIP** ao array `packages` do `manifest.json`:
+
+```json
+"packages": [
+  {
+    "id": "catalogo-2026-11",
+    "url": "https://github.com/KissCallMe/gogames-updates/releases/download/content-2026-11/GoGames-Catalogo.zip",
+    "sha256": "HASH_SHA256_REAL_DE_64_CARACTERES",
+    "size": 123456
+  }
+]
+```
+
+O campo `id` identifica a instalação, `sha256` e `size` precisam corresponder ao ZIP real. **Não copie o exemplo para produção sem substituí-los.** O launcher exige confirmação antes de sincronizar. Os pacotes adicionam FakeROMs, substituem FakeROMs com mesmo caminho e preservam as demais; emuladores existentes não são mesclados nem substituídos. O ZIP não instala BIOS, saves, configurações ou ROMs comerciais. Novos consoles podem precisar de integração no executável. Limites: 2 GiB de ZIP, 8 GiB extraídos e 100 mil entradas. `7zr.exe` não é necessário: o GoGames lê ZIP pelo Rust.
+
+**Atenção:** publicar um ZIP não ativa automaticamente suporte a pacotes em versões antigas do executável. O instalador de pacotes precisa ser compilado e distribuído primeiro. Use apenas emuladores e metadados que você tenha direito de distribuir.
