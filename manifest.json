@@ -1,3 +1,4 @@
+
 {
   "schema_version": 1,
   "channel": "stable",
@@ -19,13 +20,14 @@
       "url": "https://raw.githubusercontent.com/KissCallMe/gogames-updates/main/catalog/PS2/123alex123.zip.torrent",
       "sha256": "61a19635df3093d2f69c914ee54f2acac211e5b4e1beee29078e61ad2fc94d76",
       "size": 102
-    },
-    {
-  "id": "teste-zip-001",
-  "url": "https://github.com/KissCallMe/gogames-updates/releases/download/content-test-001/GoGames-TEST.zip",
-  "sha256": "a0679d631059a2e4ab36ed850d3e03196fb6fdf42ce8846e16e0429380876b74",
-  "size": 827
-}
+    }
   ],
-  "packages": []
+  "packages": [
+    {
+      "id": "teste-zip-001",
+      "url": "https://github.com/KissCallMe/gogames-updates/releases/download/content-test-001/GoGames-TEST.zip",
+      "sha256": "a0679d631059a2e4ab36ed850d3e03196fb6fdf42ce8846e16e0429380876b74",
+      "size": 827
+    }
+  ]
 }
