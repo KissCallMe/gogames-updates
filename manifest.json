@@ -1,15 +1,15 @@
 
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "channel": "stable",
   "resources": [],
   "packages": [
     {
-      "id": "dreamcast-saturn-pc-1.0.0",
-      "title": "GoGames 1.0.0 — Grande Expansão de Jogos",
+      "id": "dreamcast-saturn-pc-1.0.1",
+      "title": "GoGames 1.0.1 — Grande Expansão de Jogos",
       "notes": "A maior expansão do GoGames até agora! Novidade: Dreamcast com aproximadamente 4.500 jogos, Sega Saturn com cerca de 7.100 jogos e uma nova seção de PC com mais de 19.000 jogos disponíveis no catálogo.",
       "url": "https://github.com/KissCallMe/gogames-updates/releases/download/v1.0.0/GoGames-Content-1.0.0.zip",
-      "sha256": "1F49839A9B9DFB7CE93A95BE6D77B9AF6B3B0F42626A3C47732CFF9C7C338D43",
+      "sha256": "A567BFFAB828FA7A19E2FCEC18039660758B0860A166F8E8CACFABFD7CFA62AA",
       "size": 95589025
     }
   ]
