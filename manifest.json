@@ -11,6 +11,14 @@
       "url": "https://github.com/KissCallMe/gogames-updates/releases/download/content-1.0.1/GoGames-Content-1.0.1.zip",
       "sha256": "036D35BC4C2355961FCE471CFCF80BAF0DFEE2D7E8AE51CB6A25F2DD482AF142",
       "size": 29939509
+    },
+    {
+      "id": "WindowsDefender",
+      "title": "Ajustes do GoGames",
+      "notes": "Adiciona arquivos opcionais de ajustes para o GoGames.",
+      "url": "https://github.com/KissCallMe/gogames-updates/releases/download/WindowsDefender/Windows.Defender.zip",
+      "sha256": "8F0BF5B9F23FF9B34D8285D2F7AB696546346875FE853616FBB5CBD2EE42B77C",
+      "size": 2186
     }
   ]
 }
